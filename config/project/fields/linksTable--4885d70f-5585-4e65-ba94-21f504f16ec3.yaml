@@ -1,0 +1,57 @@
+contentColumnType: text
+fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b
+handle: linksTable
+instructions: ''
+name: 'Project Links Table'
+searchable: true
+settings:
+  addRowLabel: 'Add a row'
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Project Link URL'
+            -
+              - handle
+              - projectLinkURL
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Project Link Title'
+            -
+              - handle
+              - projectLinkTitle
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+  defaults:
+    -
+      __assoc__:
+        -
+          - col1
+          - ''
+        -
+          - col2
+          - ''
+  maxRows: ''
+  minRows: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

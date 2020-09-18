@@ -1,0 +1,18 @@
+contentColumnType: string(48)
+fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b
+handle: projectYear
+instructions: ''
+name: 'Project Year'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 12
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

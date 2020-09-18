@@ -1,0 +1,20 @@
+{% if global.alertBanner %}
+    <div class="alert-banner">
+    	<h3>{{ global.alert }}</h3>
+<!--     	<h3 class="banner-close">X</h3> -->
+	</div>
+{% endif %}
+
+
+<nav>
+	<div class="nav-left">
+		<a href="/">
+			<h3>{{ global.author }}</h3>
+		</a>
+	</div>
+	<div class="nav-right">
+		<a href="/#projects">
+			<h3>{{ global.siteTitle }} <span class="glass">{{ global.currentYear }}</span></h3>
+		</a>
+	</div>
+</nav>

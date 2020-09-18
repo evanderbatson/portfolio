@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 859871ca-1e6f-44a0-97d5-ab664a5cf156
+handle: loglineLabel
+instructions: ''
+name: 'Logline Label'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: 'Current Assignment'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

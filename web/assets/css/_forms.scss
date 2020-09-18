@@ -1,0 +1,26 @@
+input#secretHoneypotParamName { display: none; }
+
+form {
+	input, textarea {
+		background: $grey-color;
+		width: 100%;
+		padding: $space/2;
+		margin-bottom: $space;
+		box-sizing: border-box;
+		border: none;
+  		border-radius: $space/2;
+	}
+	textarea {
+		min-height: $space*8;
+		resize: vertical;
+	}
+	.errors {
+		li {
+			color: $dark-grey-color;
+			margin-bottom: $space;
+		}
+	}
+	.button {
+		background: $dark-grey-color;
+	}	
+}

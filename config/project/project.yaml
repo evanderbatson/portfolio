@@ -1,0 +1,26 @@
+dateModified: 1600213994
+email:
+  fromEmail: evanderbatson@gmail.com
+  fromName: Portfolio
+  transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  obfuscator:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: Portfolio
+  schemaVersion: 3.5.13
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

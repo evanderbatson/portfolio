@@ -1,0 +1,126 @@
+{% extends '/_layouts/base' %}
+
+{% block content %}
+
+<!--            -->
+<!--   Header   -->
+<!--            -->
+
+<header class="introduction">
+    <div class="header-container">
+        <h1 class="masthead row-1">{{ entry.masthead }}</h1>
+        <h3 class="logline-title glass row-2">{{ entry.loglineLabel }}</h3>
+        <h3 class="logline-description row-2">
+            {{entry.loglinePosition }} at the <a href="{{ entry.loglineUrl }}" target="_blank">{{ entry.loglineUrlTitle }}</a> {{ entry.loglineDescription }}
+        </h3>
+        <div class="header-links">
+            <ul>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!--            -->
+<!--  Projects  -->
+<!--            -->
+
+<section id="projects" class="project-grid">
+    {% for entry in craft.entries.section('project').limit(6) %}
+        {% set image = entry.projectThumbnail.first() %}
+        <a href='{{ entry.url }}'>
+            <div class="project-preview">
+                    {% if image %}
+                        <div class="preview-image">
+                            <h3>{{ entry.projectKicker }}</h3>
+                            <div class="preview-image-background" style="background-image:url('{{ image.url }}')">
+                            </div>
+                        </div>
+                    {% endif %}
+
+                    <div class="preview-info">
+                        <h3>{{ entry.projectTitle }}</h3>
+                        <h3 class="glass">{{ entry.projectType }}</h3>
+                    </div>
+            </div>
+        </a>
+    {% endfor %}
+</section>
+
+<!--            -->
+<!--  InfoCard  -->
+<!--            -->
+
+<section class="info-card">
+    <div class="info-card-container">
+        <!--  Row 1  -->
+        <h1 class="info-headline">Methodology</h1>
+        <h3 class='info-description'>{{ entry.methodologyCopy }}</h3>
+        <!--  Row 2  -->
+        <h3 class="info-title glass">Capabilities</h3>
+        <h3 class="info-label label-1 glass">Practices</h3>
+        {% if entry.practicesTable | length %}
+            <ul class="info-col-1 top">
+                {% for row in entry.practicesTable %}
+                    <li>{{ row.firstCol }}</li>
+                {% endfor %}
+            </ul>
+            <ul class="info-col-2 top">
+                {% for row in entry.practicesTable %}
+                    <li>{{ row.secondCol }}</li>
+                {% endfor %}
+            </ul>
+            <ul class="info-col-3">
+                {% for row in entry.practicesTable %}
+                    <li>{{ row.thirdCol }}</li>
+                {% endfor %}
+            </ul>
+            <ul class="info-col-4">
+                {% for row in entry.practicesTable %}
+                    <li>{{ row.fourthCol }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+            <!--  Row 3  -->
+            <h3 class="info-label info-label label-2 glass">Tools</h3>
+        {% if entry.toolsTable | length %}
+            <ul class="info-col-1 top">
+                {% for row in entry.toolsTable %}
+                    <li>{{ row.firstCol }}</li>
+                {% endfor %}
+            </ul>
+            <ul class="info-col-2 top">
+                {% for row in entry.toolsTable %}
+                    <li>{{ row.secondCol }}</li>
+                {% endfor %}
+            </ul>
+            <ul class="info-col-3">
+                {% for row in entry.toolsTable %}
+                    <li>{{ row.thirdCol }}</li>
+                {% endfor %}
+            </ul>
+            <ul class="info-col-4">
+                {% for row in entry.toolsTable %}
+                    <li>{{ row.fourthCol }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</section>
+
+<!--            -->
+<!--   Canvas   -->
+<!--            -->
+
+<section class="canvas">
+    {% if entry.videoReel.one() %}
+        {% set video = entry.videoReel.one() %}
+        {% set poster = entry.reelPoster.one() %}
+        <video loop muted autoplay poster="{{ poster.url }}">
+            <source src="{{ video.url }}" type="video/mp4">
+        </video>
+    {% endif %}
+</section>
+
+{% endblock %}

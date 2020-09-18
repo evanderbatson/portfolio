@@ -1,0 +1,57 @@
+<!--
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░ hello, i'm ░░░░░░░░░░░░░░░░░░░░░░░
+░░▒▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░▒▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▓░░░░░░░░░░░░░░░░░░░
+░░▒▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▓░░░░░░░░░░░░░░░░░░░
+░░▒▓▓▓▓░▒▓░░░▒▓░░▒▓▓▒░░▒▓▒▓▓░░░▒▓▓▓▓░░░▒▓▓▒░░▒▓▒▓▓░░░░░
+░░▒▓░░░░░▒▓░▒▓░░▒▓░▒▓░░▒▓▒░▒▓░▒▓░░▒▓░▒▓▒░░▒▓░▒▓░░▒▓░░░░
+░░▒▓░░░░░▒▓░▒▓░░▒▓░▒▓░░▒▓░░▒▓░▒▓░░▒▓░▒▓▓▓▓▓▓░▒▓▓▓▓░░░░░
+░░▒▓░░░░░░▒▓▓░░░▒▓░▒▓░░▒▓░░▒▓░▒▓░░▒▓░▒▓░░░░░░▒▓░░▒▓░░░░
+░░▒▓▓▓▓░░░▒▓░░░░░▒▓▓▓▒░▒▓░░▒▓░░▒▓▓▓▒░░▒▓▓▓▓▒░▒▓░░░▒▓░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░~ evanderbatson.com ~░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+-->
+
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en-US'>
+<head>
+	{% block head %}
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta charset='utf-8'>
+		<title>
+			{{ global.siteTitle }} — {{ global.author }} 
+		</title>
+		<link rel="shortcut icon" type="image/png" href="/assets/brand/evanderbatson-favicon.png"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel='stylesheet' type='text/css' href='/assets/css/main.css'>
+		<!-- fonts -->
+		<link rel="stylesheet" href="https://use.typekit.net/hmy3byn.css">
+		<!-- meta data -->
+		<meta property="og:url" content="http://evanderbatson.com/" />
+		<meta property="og:type" content="Portfolio" />
+		<meta property="og:title" content="Evander Batson" />
+		<meta property="og:description" content="Design Portfolio" />
+		<meta property="og:image" content="/assets/brand/evanderbatson-share.png" />
+	{% endblock %}
+</head>
+<body>
+
+	<!-- navigation -->
+
+	{% include "_includes/nav" %}
+
+	<!-- page -->
+
+	<article>
+		{% block content %}{% endblock %}
+	</article>
+
+	<!-- footer -->
+
+	{% include "_includes/footer" %}
+
+</body>
+</html>
+

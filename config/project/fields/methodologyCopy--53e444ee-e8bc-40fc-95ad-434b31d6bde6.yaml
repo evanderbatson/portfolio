@@ -1,0 +1,18 @@
+contentColumnType: string(1680)
+fieldGroup: 859871ca-1e6f-44a0-97d5-ab664a5cf156
+handle: methodologyCopy
+instructions: ''
+name: 'Methodology Copy'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 420
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: 'I approach design as a living ecology that follows the natural laws of biological systems. Through biomimetic strategy, design, and craft, I create immersive experiences both on the web and IRL following the evolutionary drive toward  the north star of storytelling and essence.'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

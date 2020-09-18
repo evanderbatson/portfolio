@@ -1,0 +1,18 @@
+contentColumnType: string(96)
+fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b
+handle: projectType
+instructions: ''
+name: 'Project Type'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 24
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: 'Agency work'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

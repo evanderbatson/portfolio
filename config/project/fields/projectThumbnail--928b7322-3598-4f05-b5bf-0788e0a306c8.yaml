@@ -1,0 +1,29 @@
+contentColumnType: string
+fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b
+handle: projectThumbnail
+instructions: ''
+name: 'Project Thumbnail'
+searchable: true
+settings:
+  allowSelfRelations: false
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: true
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

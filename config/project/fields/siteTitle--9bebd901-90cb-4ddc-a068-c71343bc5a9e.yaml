@@ -1,0 +1,18 @@
+contentColumnType: string(576)
+fieldGroup: 1ebe758b-faa7-4e26-8867-fc4c02b80dfb
+handle: siteTitle
+instructions: ''
+name: 'Site Title'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 144
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: 'Design Portfolio'
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

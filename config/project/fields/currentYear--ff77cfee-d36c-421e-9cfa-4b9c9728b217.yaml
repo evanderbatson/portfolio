@@ -1,0 +1,18 @@
+contentColumnType: string(16)
+fieldGroup: 1ebe758b-faa7-4e26-8867-fc4c02b80dfb
+handle: currentYear
+instructions: ''
+name: 'Current Year'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 4
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: '2020'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

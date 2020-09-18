@@ -1,0 +1,141 @@
+{% extends '/_layouts/base' %}
+
+{% block content %}
+
+<!--            -->
+<!--   Header   -->
+<!--            -->
+
+{% set image = entry.heroImage.one() %}
+<header class="page-header" style="background-image:url('{{ image.url }}')">
+    <div class="header-container">
+        <h1 class="page-title">
+            {{ entry.projectTitle }}
+        </h1>
+        {% if entry.heroVideo.one() %}
+            <video loop muted autoplay class="hero-video">
+                <source src="{{ entry.heroVideo.one().url }}" type="video/mp4">
+            </video>
+        {% endif %}
+    </div>
+</header>
+
+<!--            -->
+<!--  Body      -->
+<!--            -->
+
+<section class="page-section">
+    <div class="section-grid">
+        <h3 class="page-label glass">Case Study</h3>
+        <h3 class="page-kicker">{{ entry.projectKicker }}</h3>
+        <div class="page-info">
+            <h3>{{ entry.projectRole }}
+                <br>
+                <span class="glass">{{ entry.projectYear }}</span>
+            </h3>
+        </div>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="section-container">
+        <p>{{ entry.projectBody | nl2br  }}</p>
+    </div>
+</section>
+
+{% if entry.linksTable | length %}
+<section class="page-links">
+    <div class="section-grid">
+        <h2 class="page-link">Project Links</h2>
+        {% for row in entry.linksTable %}
+        <div class="page-link">
+            <a href="{{ row.projectLinkURL }}" target="_about">{{ row.projectLinkTitle }}</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+<section class="slider">
+    <div class="slider-container">
+        <div class="slider-images siema">
+            {% for asset in entry.sliderImages.all() %}
+                <div class="slider-image" style="background-image:url('{{ asset.getUrl() }}')">
+                </div>
+            {% endfor %}
+        </div>
+        <div class="slider-controls">
+            <div class="left arrow">
+                <img src="/assets/ui/eb-arrow.svg">
+            </div>
+            <div class="right arrow">
+                <img src="/assets/ui/eb-arrow.svg">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% set params = {
+    section: 'project',
+    order:   'title'
+} %}
+
+{% set nextEntry = entry.getNext(params) %}
+{% set oneEntry = craft.entries.section('project').one %}
+
+{% if nextEntry %}
+    {% set image = nextEntry.projectThumbnail.one() %}
+    <section class="end-card">
+        <a href="{{ nextEntry.url }}">
+            <div class="card-image" style="background-image:url('{{ image.url }}')"></div>
+        </a>
+        <div class="card-description">
+            <a href="{{ nextEntry.url }}">
+                <div class="card-info">
+                    <h3>Next Up</h3>
+                    <h1>{{ nextEntry.projectTitle }}</h1>
+                    <h3>{{ nextEntry.projectKicker }}</h3>
+                    <h3 class="end-link glass">View Case Study</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+{% else %}
+    {% set image = oneEntry.projectThumbnail.one() %}
+    <section class="end-card">
+        <a href="{{ oneEntry.url }}">
+            <div class="card-image" style="background-image:url('{{ image.url }}')"></div>
+        </a>
+        <div class="card-description">
+            <a href="{{ oneEntry.url }}">
+                <div class="card-info">
+                    <h3>Back to the beginning</h3>
+                    <h1>{{ oneEntry.projectTitle }}</h1>
+                    <h3>{{ oneEntry.projectKicker }}</h3>
+                    <h3 class="end-link glass">View Case Study</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+{% endif %}
+
+<script src="/assets/scripts/siema.min.js"></script>
+<script>
+    const mySiema = new Siema();
+    document.querySelector('.left').addEventListener('click', () => mySiema.prev());
+    document.querySelector('.right').addEventListener('click', () => mySiema.next());
+
+    // listen for keydown event
+    document.addEventListener('keydown', (e) => {
+      // if it's left arrow key
+      if (e.keyCode === 37) {
+        mySiema.prev()
+      }
+      // if it's right arrow key
+      else if (e.keyCode === 39) {
+        mySiema.next()
+      }
+    });
+</script>
+
+{% endblock %}

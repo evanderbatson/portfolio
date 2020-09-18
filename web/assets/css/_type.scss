@@ -1,0 +1,49 @@
+h1 {
+	animation: niceFade 1s;
+	transform: translateY(0);
+	@include typeLarge();
+	font-family: $font-serif;
+	position: relative;
+}
+
+h2 {
+	@include typeMedium();
+	font-family: $font-sans;
+}
+
+h3, li, input, textarea {
+	@include typeSmall();
+	font-family: $font-sans;
+}
+
+p, a {
+	@include typeSmall();
+		font-family: $font-sans;
+}
+
+hr {
+	margin-top: $space;
+	margin-bottom: $space*2;
+	width: 100%;
+	border: 0;
+	border-top: 1px $light-color solid;
+}
+
+caption {
+	@include typeTiny();
+	font-family: $font-sans;
+}
+
+.glass {
+	opacity: 0.6;
+}
+
+.divider {
+	height: $space*4;
+	@media (max-width: $tablet) {
+		height: $space*2;
+	}
+	@media (max-width: $mobile) {
+		height: $space;
+	}
+}

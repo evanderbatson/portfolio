@@ -1,0 +1,12 @@
+contentColumnType: string(255)
+fieldGroup: 859871ca-1e6f-44a0-97d5-ab664a5cf156
+handle: loglineUrl
+instructions: ''
+name: 'Logline URL'
+searchable: true
+settings:
+  maxLength: '255'
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

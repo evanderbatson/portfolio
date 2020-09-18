@@ -1,0 +1,18 @@
+contentColumnType: string(352)
+fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b
+handle: projectRole
+instructions: ''
+name: 'Project Role'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 88
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: 'Product Designer'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

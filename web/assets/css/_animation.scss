@@ -1,0 +1,9 @@
+@keyframes niceFade {
+    from { opacity: 0; top: -$space; }
+    to   { opacity: 1; top: 0; }
+}
+
+@keyframes simpleFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

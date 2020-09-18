@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 1ebe758b-faa7-4e26-8867-fc4c02b80dfb
+handle: degrees
+instructions: ''
+name: Degrees
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: 'B.A., M.F.A.'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

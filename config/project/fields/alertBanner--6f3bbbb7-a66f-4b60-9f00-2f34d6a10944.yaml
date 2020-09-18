@@ -1,0 +1,13 @@
+contentColumnType: boolean
+fieldGroup: 1ebe758b-faa7-4e26-8867-fc4c02b80dfb
+handle: alertBanner
+instructions: 'Enables an alert banner at the top of the page.'
+name: 'Alert Banner'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

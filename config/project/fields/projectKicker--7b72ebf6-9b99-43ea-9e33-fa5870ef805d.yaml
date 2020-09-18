@@ -1,0 +1,18 @@
+contentColumnType: string(576)
+fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b
+handle: projectKicker
+instructions: ''
+name: 'Project Kicker'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 144
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

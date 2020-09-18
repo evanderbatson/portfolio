@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+//
+//colors
+//
+
+$accent-color:    #1CB17D;
+$dark-color:      #101010;
+$light-color:     #FDFDFD;
+$grey-color:      lighten($dark-color, 70%);
+$dark-grey-color: lighten($dark-color, 40%);
+
+//
+//breakpoints
+//
+
+$desktop:         1540px;
+$laptop:          1240px;
+$tablet:          1080px;
+$mobile:          720px;
+
+//
+//type sizes
+//
+
+$typeSize-l:      calc(3rem + 2vw);
+$typeSize-m:      calc(0.75rem + 0.4vw);
+$typeSize-s:      calc(0.75rem + 0.4vw);
+$typeSize-xs:     calc(0.8rem + 0.4vw);
+
+
+//
+//
+//
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+//
+//spacing
+//
+
+$space: 1.5rem;
+$space-mobile: 0.5rem;
+$card-height: calc(20rem + 36vw);
+
+@mixin cardPadding() {
+  padding: $space*8 $space*2;
+  @media (max-width: $desktop) {
+    padding: $space*6 $space*2;
+  }
+  @media (max-width: $mobile) {
+    padding: $space*3 $space;
+  }
+}
+
+@mixin sectionPadding() {
+    padding: $space*2;
+    @media (max-width: $mobile) {
+      padding: $space;
+    }
+}
+
+@mixin bodyPadding() {
+    padding: 0 $space*2 $space*2 $space*2;
+    @media (max-width: $mobile) {
+      padding: 0 $space $space $space;
+    }
+}
+
+@mixin componentPadding() {
+    padding: $space*1.5 $space*2;
+    @media (max-width: $desktop) {
+      padding: $space $space*2;
+    }
+    @media (max-width: $mobile) {
+      padding: $space;
+    }
+}
+
+@mixin typeLarge() {
+  font-size: $typeSize-l;
+  letter-spacing: -0.06rem;
+  line-height: 1;
+}
+
+@mixin typeMedium() {
+  font-size: $typeSize-m;
+  line-height: 1.5;
+}
+
+@mixin typeSmall() {
+  font-size: $typeSize-s;
+  line-height: 1.5;
+}
+
+@mixin typeTiny() {
+  font-size: $typeSize-xs;
+  line-height: 1.5;
+}
+
+//
+//fonts
+//
+
+$font-serif: big-caslon-fb, Georgia, serif;
+$font-sans: pragmatica-extended, Helvetica, Arial, sans-serif;
+
+//
+//mixins
+//
+
+@mixin layoutGrid ($columns) {
+  display: grid;
+  grid-template-columns: repeat($columns, [col] 1fr);
+  grid-column-gap: $space/2;
+  align-content: start;
+  justify-content: space-around;
+}
+
+@mixin darkCard () {
+  background-color: $dark-color;
+  h1, h2, h3, h4, p, a, li {
+    color: $light-color;
+  }
+  a:hover {
+    color: $accent-color;
+  }
+}
+
+@mixin lightCard () {
+  background-color: $light-color;
+  h1, h2, h3, h4, p, a, li {
+    color: $dark-color;
+  }  
+}
+
+@mixin crossBrowser($property, $css) {
+    -webkit-#{$property} : $css;
+    -moz-#{$property} : $css;
+    -o-#{$property} : $css;
+    #{$property} : $css;
+}
+
+@mixin button() {
+  @include crossBrowser(user-select, none);
+  cursor: pointer;
+}
+
+@mixin xCenter($percentX) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-$percentX);
+}
+
+
+@mixin deadCenter($percentX, $percentY) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-$percentX, -$percentY);
+}
+
+@mixin deadCenterReset() {
+  position: static;
+  top: 0;
+  left: 0;
+  @include crossBrowser(transform, translate(0, 0));
+}
+
+@mixin yMargins($margin) {
+    margin-top: $margin;
+    margin-bottom: $margin;
+}
+
+@mixin xMargins($margin) {
+    margin-left: $margin;
+    margin-right: $margin;
+}
+
+@mixin bgImage() {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin square($size) {
+  height: $size;
+  width: $size;
+}
+
+@mixin hoverStateIn() {
+  transition: 100ms linear opacity;
+  -webkit-backface-visibility: hidden;
+}
+
+@mixin hoverStateOut($opacity) {
+  opacity: $opacity;
+  transition: 300ms linear;
+  h1, h3, .callout-arrow {
+    opacity: $opacity;
+  }
+}
+
+//utilities
+
+.hidden {
+    display: none;
+}
+.mobile-hidden {
+    @media (max-width: $mobile) {
+      display: none;
+    }
+}
+
+// Imports
+
+@import
+  "base",
+  "type",
+  "layout",
+  "nav",
+  "animation",
+  "forms"
+;
