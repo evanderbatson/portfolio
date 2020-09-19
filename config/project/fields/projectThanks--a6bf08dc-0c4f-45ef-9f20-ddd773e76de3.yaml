@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b
+handle: projectThanks
+instructions: ''
+name: 'Project Thanks'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

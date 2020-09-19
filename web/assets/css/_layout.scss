@@ -90,7 +90,7 @@ header {
     z-index: 1;
 }
 
-.page-section, .page-links {
+.page-section {
 	@include darkCard();
 	@include bodyPadding();
 	.section-container {
@@ -105,7 +105,7 @@ header {
 		//mobile
 		//
 		@media (max-width: $tablet) {
-			h1, h2, h3, p  {
+			h1, h2, h3, p, hr  {
 				grid-column: 1 / span 8;
 			}
 			form {
@@ -115,6 +115,7 @@ header {
 	}
 	.section-grid {
 		@include layoutGrid(8);
+		margin-bottom: $space;
 		.page-label {
 			grid-column: 1 / span 1;
 		}
@@ -124,15 +125,15 @@ header {
 		.page-info {
 			grid-column: 6 / span 2;
 		}
-		.page-link {
-			grid-column: 1 / span 4;
-			margin-bottom: $space/2;
+		.page-links {
+			grid-column: 2 / span 6;
+			padding-bottom: 0;
 		}
 		//
 		//mobile
 		//
 		@media (max-width: $tablet) {
-			.page-label, .page-link {
+			.page-label {
 				grid-column: 1 / span 8;
 			}
 			.page-kicker {
@@ -140,6 +141,9 @@ header {
 			}
 			.page-info {
 				grid-column: 6 / span 8;
+			}
+			.page-links {
+				grid-column: 1 / span 8;
 			}
 		}
 	}
@@ -186,9 +190,9 @@ header {
   			transform: scaleX(-1);
 		}
 		@media (max-width: $mobile) {
-			height: 280px;
+			height: 400px;
 			.slider-image {
-				height: 280px;
+				height: 400px;
 			}
 			.arrow {
 				img {

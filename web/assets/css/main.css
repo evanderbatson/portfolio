@@ -9,7 +9,7 @@
 }
 
 ::selection {
-  background: #1CB17D;
+  background: #6082ee;
 }
 
 html {
@@ -44,7 +44,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #1CB17D;
+  color: #6082ee;
 }
 
 ul, li {
@@ -125,7 +125,7 @@ header h1, header h2, header h3, header h4, header p, header a, header li {
   color: #FDFDFD;
 }
 header a:hover {
-  color: #1CB17D;
+  color: #6082ee;
 }
 header .header-container {
   display: grid;
@@ -225,71 +225,75 @@ header .header-container {
   z-index: 1;
 }
 
-.page-section, .page-links {
+.page-section {
   background-color: #101010;
   padding: 0 3rem 3rem 3rem;
 }
-.page-section h1, .page-section h2, .page-section h3, .page-section h4, .page-section p, .page-section a, .page-section li, .page-links h1, .page-links h2, .page-links h3, .page-links h4, .page-links p, .page-links a, .page-links li {
+.page-section h1, .page-section h2, .page-section h3, .page-section h4, .page-section p, .page-section a, .page-section li {
   color: #FDFDFD;
 }
-.page-section a:hover, .page-links a:hover {
-  color: #1CB17D;
+.page-section a:hover {
+  color: #6082ee;
 }
 @media (max-width: 720px) {
-  .page-section, .page-links {
+  .page-section {
     padding: 0 1.5rem 1.5rem 1.5rem;
   }
 }
-.page-section .section-container, .page-links .section-container {
+.page-section .section-container {
   display: grid;
   grid-template-columns: repeat(8, [col] 1fr);
   grid-column-gap: 0.75rem;
   align-content: start;
   justify-content: space-around;
 }
-.page-section .section-container h1, .page-section .section-container h2, .page-section .section-container h3, .page-section .section-container p, .page-section .section-container hr, .page-links .section-container h1, .page-links .section-container h2, .page-links .section-container h3, .page-links .section-container p, .page-links .section-container hr {
+.page-section .section-container h1, .page-section .section-container h2, .page-section .section-container h3, .page-section .section-container p, .page-section .section-container hr {
   grid-column: 1/span 4;
 }
-.page-section .section-container form, .page-links .section-container form {
+.page-section .section-container form {
   grid-column: 1/span 4;
 }
 @media (max-width: 1080px) {
-  .page-section .section-container h1, .page-section .section-container h2, .page-section .section-container h3, .page-section .section-container p, .page-links .section-container h1, .page-links .section-container h2, .page-links .section-container h3, .page-links .section-container p {
+  .page-section .section-container h1, .page-section .section-container h2, .page-section .section-container h3, .page-section .section-container p, .page-section .section-container hr {
     grid-column: 1/span 8;
   }
-  .page-section .section-container form, .page-links .section-container form {
+  .page-section .section-container form {
     grid-column: 1/span 8;
   }
 }
-.page-section .section-grid, .page-links .section-grid {
+.page-section .section-grid {
   display: grid;
   grid-template-columns: repeat(8, [col] 1fr);
   grid-column-gap: 0.75rem;
   align-content: start;
   justify-content: space-around;
+  margin-bottom: 1.5rem;
 }
-.page-section .section-grid .page-label, .page-links .section-grid .page-label {
+.page-section .section-grid .page-label {
   grid-column: 1/span 1;
 }
-.page-section .section-grid .page-kicker, .page-links .section-grid .page-kicker {
+.page-section .section-grid .page-kicker {
   grid-column: 2/span 3;
 }
-.page-section .section-grid .page-info, .page-links .section-grid .page-info {
+.page-section .section-grid .page-info {
   grid-column: 6/span 2;
 }
-.page-section .section-grid .page-link, .page-links .section-grid .page-link {
-  grid-column: 1/span 4;
-  margin-bottom: 0.75rem;
+.page-section .section-grid .page-links {
+  grid-column: 2/span 6;
+  padding-bottom: 0;
 }
 @media (max-width: 1080px) {
-  .page-section .section-grid .page-label, .page-section .section-grid .page-link, .page-links .section-grid .page-label, .page-links .section-grid .page-link {
+  .page-section .section-grid .page-label {
     grid-column: 1/span 8;
   }
-  .page-section .section-grid .page-kicker, .page-links .section-grid .page-kicker {
+  .page-section .section-grid .page-kicker {
     grid-column: 1/span 5;
   }
-  .page-section .section-grid .page-info, .page-links .section-grid .page-info {
+  .page-section .section-grid .page-info {
     grid-column: 6/span 8;
+  }
+  .page-section .section-grid .page-links {
+    grid-column: 1/span 8;
   }
 }
 
@@ -300,7 +304,7 @@ header .header-container {
 
 .slider .slider-container {
   height: calc(20rem + 36vw);
-  background-color: #1CB17D;
+  background-color: #6082ee;
 }
 .slider .slider-container .slider-image {
   height: calc(20rem + 36vw);
@@ -335,10 +339,10 @@ header .header-container {
 }
 @media (max-width: 720px) {
   .slider .slider-container {
-    height: 280px;
+    height: 400px;
   }
   .slider .slider-container .slider-image {
-    height: 280px;
+    height: 400px;
   }
   .slider .slider-container .arrow img {
     height: 2.25rem;
@@ -483,7 +487,7 @@ header .header-container {
   color: #FDFDFD;
 }
 .info-card a:hover {
-  color: #1CB17D;
+  color: #6082ee;
 }
 @media (max-width: 1540px) {
   .info-card {
@@ -590,7 +594,7 @@ header .header-container {
   color: #FDFDFD;
 }
 .services-card a:hover {
-  color: #1CB17D;
+  color: #6082ee;
 }
 @media (max-width: 720px) {
   .services-card {
@@ -707,7 +711,7 @@ footer h1, footer h2, footer h3, footer h4, footer p, footer a, footer li {
   color: #FDFDFD;
 }
 footer a:hover {
-  color: #1CB17D;
+  color: #6082ee;
 }
 footer .footer-left {
   grid-column: 1/span 2;
@@ -755,7 +759,7 @@ footer .brand {
 .alert-banner {
   width: auto;
   padding: 1.5rem 3rem;
-  background-color: #1CB17D;
+  background-color: #6082ee;
   z-index: -1;
   display: flex;
   justify-content: space-between;
