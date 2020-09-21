@@ -151,6 +151,7 @@ header .header-container {
 .introduction .header-container .masthead {
   padding-top: 2.25rem;
   grid-column: 1/span 7;
+  color: #c3c3c3;
 }
 .introduction .header-container .logline-title {
   grid-column: 1/span 2;
