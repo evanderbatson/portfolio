@@ -113,14 +113,14 @@
 <!--   Canvas   -->
 <!--            -->
 
+{% if entry.videoReel.one() %}
 <section class="canvas">
-    {% if entry.videoReel.one() %}
         {% set video = entry.videoReel.one() %}
         {% set poster = entry.reelPoster.one() %}
         <video loop muted autoplay poster="{{ poster.url }}">
             <source src="{{ video.url }}" type="video/mp4">
         </video>
-    {% endif %}
 </section>
+{% endif %}
 
 {% endblock %}
