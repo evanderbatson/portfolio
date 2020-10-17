@@ -63,6 +63,7 @@
     {% endif %}
 </section>
 
+{% if entry.sliderImages.one() %}
 <section class="slider">
     <div class="slider-container">
         <div class="slider-images siema">
@@ -81,6 +82,7 @@
         </div>
     </div>
 </section>
+{% endif %}
 
 {% set params = {
     section: 'project',
