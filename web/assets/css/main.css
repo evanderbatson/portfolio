@@ -475,6 +475,9 @@ header .header-container {
   .project-grid .project-preview .preview-info {
     padding-top: 0.75rem;
   }
+  .project-grid .project-preview:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .info-card {

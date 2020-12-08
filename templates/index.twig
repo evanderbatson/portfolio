@@ -29,22 +29,24 @@
 <section id="projects" class="project-grid">
     {% for entry in craft.entries.section('project').limit(6) %}
         {% set image = entry.projectThumbnail.first() %}
-        <a href='{{ entry.url }}'>
             <div class="project-preview">
                     {% if image %}
+                    <a href='{{ entry.url }}'>
                         <div class="preview-image">
                             <h3>{{ entry.projectKicker }}</h3>
                             <div class="preview-image-background" style="background-image:url('{{ image.url }}')">
                             </div>
                         </div>
+                    </a>
                     {% endif %}
-
-                    <div class="preview-info">
-                        <h3>{{ entry.projectTitle }}</h3>
-                        <h3 class="glass">{{ entry.projectType }}</h3>
-                    </div>
+                    <a href='{{ entry.url }}'>
+                        <div class="preview-info">
+                            <h3>{{ entry.projectTitle }}</h3>
+                            <h3 class="glass">{{ entry.projectType }}</h3>
+                        </div>
+                    </a>
             </div>
-        </a>
+<!--         </a> -->
     {% endfor %}
 </section>
 
