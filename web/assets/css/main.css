@@ -61,7 +61,7 @@ li {
 h1 {
   animation: niceFade 1s;
   transform: translateY(0);
-  font-size: calc(3rem + 2vw);
+  font-size: calc(2.2rem + 2vw);
   letter-spacing: -0.06rem;
   line-height: 1;
   font-family: pragmatica-extended, Helvetica, Arial, sans-serif;
@@ -474,9 +474,6 @@ header .header-container {
   }
   .project-grid .project-preview .preview-info {
     padding-top: 0.75rem;
-  }
-  .project-grid .project-preview:last-child {
-    margin-bottom: 0;
   }
 }
 
