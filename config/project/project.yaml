@@ -1,4 +1,4 @@
-dateModified: 1602960038
+dateModified: 1613422202
 email:
   fromEmail: evanderbatson@gmail.com
   fromName: Portfolio
@@ -16,7 +16,7 @@ system:
   edition: solo
   live: true
   name: Portfolio
-  schemaVersion: 3.5.13
+  schemaVersion: 3.6.4
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
