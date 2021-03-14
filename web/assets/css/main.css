@@ -61,7 +61,7 @@ li {
 h1 {
   animation: niceFade 1s;
   transform: translateY(0);
-  font-size: calc(2.2rem + 2vw);
+  font-size: calc(2rem + 2vw);
   letter-spacing: -0.06rem;
   line-height: 1;
   font-family: pragmatica-extended, Helvetica, Arial, sans-serif;
@@ -69,7 +69,7 @@ h1 {
 }
 
 h2 {
-  font-size: calc(0.75rem + 0.4vw);
+  font-size: calc(1rem + 0.6vw);
   line-height: 1.5;
   font-family: pragmatica-extended, Helvetica, Arial, sans-serif;
 }
@@ -107,7 +107,7 @@ caption {
 .divider {
   height: 6rem;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1024px) {
   .divider {
     height: 3rem;
   }
@@ -138,7 +138,7 @@ header .header-container {
 .introduction {
   padding: 12rem 3rem;
 }
-@media (max-width: 1540px) {
+@media (max-width: 1920px) {
   .introduction {
     padding: 9rem 3rem;
   }
@@ -159,12 +159,12 @@ header .header-container {
 .introduction .header-container .logline-description, .introduction .header-container .header-links {
   grid-column: 3/span 5;
 }
-@media (max-width: 1540px) {
+@media (max-width: 1920px) {
   .introduction .header-container .masthead {
     grid-column: 1/span 8;
   }
 }
-@media (max-width: 1080px) {
+@media (max-width: 1024px) {
   .introduction .header-container .logline-title, .introduction .header-container .logline-description, .introduction .header-container .header-links {
     grid-column: 1/span 8;
   }
@@ -178,7 +178,7 @@ header .header-container {
   overflow: hidden;
 }
 .page-header .header-container {
-  padding: 3rem;
+  padding: 3rem 3rem 0 3rem;
   padding-top: 30rem;
 }
 @media (max-width: 720px) {
@@ -228,7 +228,7 @@ header .header-container {
 
 .page-section {
   background-color: #101010;
-  padding: 0 3rem 3rem 3rem;
+  padding: 3rem;
 }
 .page-section h1, .page-section h2, .page-section h3, .page-section h4, .page-section p, .page-section a, .page-section li {
   color: #FDFDFD;
@@ -238,7 +238,7 @@ header .header-container {
 }
 @media (max-width: 720px) {
   .page-section {
-    padding: 0 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem;
   }
 }
 .page-section .section-container {
@@ -254,7 +254,15 @@ header .header-container {
 .page-section .section-container form {
   grid-column: 1/span 4;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1600px) {
+  .page-section .section-container h1, .page-section .section-container h2, .page-section .section-container h3, .page-section .section-container p, .page-section .section-container hr {
+    grid-column: 1/span 5;
+  }
+  .page-section .section-container form {
+    grid-column: 1/span 5;
+  }
+}
+@media (max-width: 1024px) {
   .page-section .section-container h1, .page-section .section-container h2, .page-section .section-container h3, .page-section .section-container p, .page-section .section-container hr {
     grid-column: 1/span 8;
   }
@@ -279,21 +287,37 @@ header .header-container {
 .page-section .section-grid .page-info {
   grid-column: 6/span 2;
 }
-.page-section .section-grid .page-links {
-  grid-column: 2/span 6;
+.page-section .section-grid .page-content {
+  grid-column: 2/span 3;
   padding-bottom: 0;
+  padding-right: 1.5rem;
+  border-right: 1px solid #767676;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1600px) {
   .page-section .section-grid .page-label {
-    grid-column: 1/span 8;
+    grid-column: 1/span 5;
   }
   .page-section .section-grid .page-kicker {
     grid-column: 1/span 5;
   }
   .page-section .section-grid .page-info {
-    grid-column: 6/span 8;
+    grid-column: 1/span 5;
   }
-  .page-section .section-grid .page-links {
+  .page-section .section-grid .page-content {
+    grid-column: 1/span 5;
+  }
+}
+@media (max-width: 1024px) {
+  .page-section .section-grid .page-label {
+    grid-column: 1/span 8;
+  }
+  .page-section .section-grid .page-kicker {
+    grid-column: 1/span 8;
+  }
+  .page-section .section-grid .page-info {
+    grid-column: 1/span 8;
+  }
+  .page-section .section-grid .page-content {
     grid-column: 1/span 8;
   }
 }
@@ -390,7 +414,7 @@ header .header-container {
 .end-card .card-description h1 {
   margin-bottom: 0.75rem;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1024px) {
   .end-card a, .end-card .card-image, .end-card .card-description {
     grid-column: 1/span 2;
   }
@@ -490,7 +514,7 @@ header .header-container {
 .info-card a:hover {
   color: #6082ee;
 }
-@media (max-width: 1540px) {
+@media (max-width: 1920px) {
   .info-card {
     padding: 9rem 3rem;
   }
@@ -539,7 +563,7 @@ header .header-container {
 .info-card .info-card-container .info-col-4 {
   grid-column: 7/span 1;
 }
-@media (max-width: 1540px) {
+@media (max-width: 1920px) {
   .info-card .info-card-container .info-description {
     grid-column: 5/span 4;
   }
@@ -563,7 +587,7 @@ header .header-container {
     grid-column: 7/span 2;
   }
 }
-@media (max-width: 1080px) {
+@media (max-width: 1024px) {
   .info-card .info-card-container .info-headline, .info-card .info-card-container .info-description {
     grid-column: 1/span 8;
     margin-bottom: 1.5rem;
@@ -619,7 +643,7 @@ header .header-container {
 .services-card .services-container .service-rate {
   grid-column: 8/span 1;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1024px) {
   .services-card .services-container .services-label {
     grid-column: 1/span 2;
   }
@@ -648,7 +672,7 @@ header .header-container {
   object-fit: cover;
   opacity: 0.9;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1024px) {
   .canvas {
     height: auto;
   }
@@ -670,7 +694,7 @@ nav .nav-left, nav .nav-right {
   margin-top: 0.75rem;
   padding: 2.25rem 3rem;
 }
-@media (max-width: 1540px) {
+@media (max-width: 1920px) {
   nav .nav-left, nav .nav-right {
     padding: 1.5rem 3rem;
   }
@@ -683,7 +707,7 @@ nav .nav-left, nav .nav-right {
 nav .nav-left h3, nav .nav-left a, nav .nav-right h3, nav .nav-right a {
   color: #FDFDFD;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1024px) {
   nav .nav-left, nav .nav-right {
     margin-top: 0;
   }
@@ -698,7 +722,7 @@ footer {
   align-content: start;
   justify-content: space-around;
 }
-@media (max-width: 1540px) {
+@media (max-width: 1920px) {
   footer {
     padding: 1.5rem 3rem;
   }
@@ -730,7 +754,7 @@ footer h3, footer a, footer li {
 footer .brand {
   opacity: 1;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1024px) {
   footer {
     display: grid;
     grid-template-columns: repeat(2, [col] 1fr);

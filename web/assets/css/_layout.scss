@@ -45,7 +45,7 @@ header {
 	@include bgImage();
 	overflow: hidden;
 	.header-container {
-		@include sectionPadding();
+		@include headerPadding();
 		padding-top: $space*20;
 		h1 {
 			margin-bottom: $space;
@@ -93,7 +93,7 @@ header {
 
 .page-section {
 	@include darkCard();
-	@include bodyPadding();
+	@include sectionPadding();
 	.section-container {
 		@include layoutGrid(8);
 		h1, h2, h3, p, hr {
@@ -101,6 +101,17 @@ header {
 		}
 		form {
 			grid-column: 1 / span 4;
+		}
+		//
+		//laptop
+		//
+		@media (max-width: $laptop) {
+			h1, h2, h3, p, hr {
+				grid-column: 1 / span 5;
+			}
+			form {
+				grid-column: 1 / span 5;
+			}
 		}
 		//
 		//mobile
@@ -126,9 +137,28 @@ header {
 		.page-info {
 			grid-column: 6 / span 2;
 		}
-		.page-links {
-			grid-column: 2 / span 6;
+		.page-content {
+			grid-column: 2 / span 3;
 			padding-bottom: 0;
+			padding-right: $space;
+			border-right: 1px solid $dark-grey-color;
+		}
+		//
+		//laptop
+		//
+		@media (max-width: $laptop) {
+			.page-label {
+				grid-column: 1 / span 5;
+			}
+			.page-kicker {
+				grid-column: 1 / span 5;
+			}
+			.page-info {
+				grid-column: 1 / span 5;
+			}
+			.page-content {
+				grid-column: 1 / span 5;
+			}
 		}
 		//
 		//mobile
@@ -138,12 +168,12 @@ header {
 				grid-column: 1 / span 8;
 			}
 			.page-kicker {
-				grid-column: 1 / span 5;
+				grid-column: 1 / span 8;
 			}
 			.page-info {
-				grid-column: 6 / span 8;
+				grid-column: 1 / span 8;
 			}
-			.page-links {
+			.page-content {
 				grid-column: 1 / span 8;
 			}
 		}

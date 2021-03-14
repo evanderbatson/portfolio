@@ -14,17 +14,17 @@ $dark-grey-color: lighten($dark-color, 40%);
 //breakpoints
 //
 
-$desktop:         1540px;
-$laptop:          1240px;
-$tablet:          1080px;
+$desktop:         1920px;
+$laptop:          1600px;
+$tablet:          1024px;
 $mobile:          720px;
 
 //
 //type sizes
 //
 
-$typeSize-l:      calc(2.2rem + 2vw);
-$typeSize-m:      calc(0.75rem + 0.4vw);
+$typeSize-l:      calc(2rem + 2vw);
+$typeSize-m:      calc(1rem + 0.6vw);
 $typeSize-s:      calc(0.75rem + 0.4vw);
 $typeSize-xs:     calc(0.8rem + 0.4vw);
 
@@ -57,17 +57,17 @@ $card-height: calc(20rem + 36vw);
   }
 }
 
-@mixin sectionPadding() {
-    padding: $space*2;
+@mixin headerPadding() {
+    padding: $space*2 $space*2 0 $space*2;
     @media (max-width: $mobile) {
       padding: $space;
     }
 }
 
-@mixin bodyPadding() {
-    padding: 0 $space*2 $space*2 $space*2;
+@mixin sectionPadding() {
+    padding: $space*2;
     @media (max-width: $mobile) {
-      padding: 0 $space $space $space;
+      padding: $space;
     }
 }
 
