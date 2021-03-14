@@ -29,6 +29,10 @@ body {
   padding: 0;
 }
 
+img {
+  width: 100%;
+}
+
 h1, h2, h3, p, li, caption {
   font-weight: 400;
   font-style: normal;
@@ -66,6 +70,7 @@ h1 {
   line-height: 1;
   font-family: pragmatica-extended, Helvetica, Arial, sans-serif;
   position: relative;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
@@ -186,9 +191,6 @@ header .header-container {
     padding: 1.5rem;
   }
 }
-.page-header .header-container h1 {
-  margin-bottom: 1.5rem;
-}
 .page-header .header-container h1, .page-header .header-container h2, .page-header .header-container h3 {
   grid-column: 1/span 6;
   position: relative;
@@ -251,14 +253,15 @@ header .header-container {
 .page-section .section-container h1, .page-section .section-container h2, .page-section .section-container h3, .page-section .section-container p, .page-section .section-container hr {
   grid-column: 1/span 4;
 }
-.page-section .section-container form {
+.page-section .section-container form, .page-section .section-container img {
   grid-column: 1/span 4;
+  margin-bottom: 3rem;
 }
 @media (max-width: 1600px) {
   .page-section .section-container h1, .page-section .section-container h2, .page-section .section-container h3, .page-section .section-container p, .page-section .section-container hr {
     grid-column: 1/span 5;
   }
-  .page-section .section-container form {
+  .page-section .section-container form, .page-section .section-container img {
     grid-column: 1/span 5;
   }
 }
@@ -266,7 +269,7 @@ header .header-container {
   .page-section .section-container h1, .page-section .section-container h2, .page-section .section-container h3, .page-section .section-container p, .page-section .section-container hr {
     grid-column: 1/span 8;
   }
-  .page-section .section-container form {
+  .page-section .section-container form, .page-section .section-container img {
     grid-column: 1/span 8;
   }
 }
@@ -290,8 +293,6 @@ header .header-container {
 .page-section .section-grid .page-content {
   grid-column: 2/span 3;
   padding-bottom: 0;
-  padding-right: 1.5rem;
-  border-right: 1px solid #767676;
 }
 @media (max-width: 1600px) {
   .page-section .section-grid .page-label {
@@ -320,6 +321,14 @@ header .header-container {
   .page-section .section-grid .page-content {
     grid-column: 1/span 8;
   }
+}
+
+.case-study {
+  padding-top: 12rem;
+}
+.case-study .section-grid .page-content {
+  padding-right: 1.5rem;
+  border-right: 1px solid #767676;
 }
 
 .images img {

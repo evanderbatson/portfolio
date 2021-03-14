@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b
+handle: caseStudyTitle
+instructions: ''
+name: 'Case Study Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

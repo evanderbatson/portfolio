@@ -47,9 +47,6 @@ header {
 	.header-container {
 		@include headerPadding();
 		padding-top: $space*20;
-		h1 {
-			margin-bottom: $space;
-		}
 		h1, h2, h3 {
 			grid-column: 1 / span 6;
 			position: relative;
@@ -99,8 +96,9 @@ header {
 		h1, h2, h3, p, hr {
 			grid-column: 1 / span 4;
 		}
-		form {
+		form, img {
 			grid-column: 1 / span 4;
+			margin-bottom: $space*2;
 		}
 		//
 		//laptop
@@ -109,7 +107,7 @@ header {
 			h1, h2, h3, p, hr {
 				grid-column: 1 / span 5;
 			}
-			form {
+			form, img {
 				grid-column: 1 / span 5;
 			}
 		}
@@ -120,11 +118,12 @@ header {
 			h1, h2, h3, p, hr  {
 				grid-column: 1 / span 8;
 			}
-			form {
+			form, img {
 				grid-column: 1 / span 8;
 			}
 		}
 	}
+
 	.section-grid {
 		@include layoutGrid(8);
 		margin-bottom: $space;
@@ -140,8 +139,6 @@ header {
 		.page-content {
 			grid-column: 2 / span 3;
 			padding-bottom: 0;
-			padding-right: $space;
-			border-right: 1px solid $dark-grey-color;
 		}
 		//
 		//laptop
@@ -176,6 +173,15 @@ header {
 			.page-content {
 				grid-column: 1 / span 8;
 			}
+		}
+	}
+}
+.case-study {
+	padding-top: $space*8;
+	.section-grid {
+		.page-content {
+			padding-right: $space;
+			border-right: 1px solid $dark-grey-color;
 		}
 	}
 }

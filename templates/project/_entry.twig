@@ -85,10 +85,15 @@
 {% endif %}
 
 {% if entry.caseStudyBody %}
-<section class="page-section">
+<section class="page-section case-study">
     <div class="section-container">
-        <h2 class="glass">Project Case Study</h2>
+        <h2 class="glass">Case Study</h2>
+        <h1>{{ entry.caseStudyTitle }}</h1>
         <p>{{ entry.caseStudyBody | nl2br }}</p>
+        {% set image = entry.caseStudyImage.one() %}
+        {% if image %}
+            <img src="{{ image.url }}">
+        {% endif %}
     </div>
     <div class="section-grid">
         <h3 class="page-label glass">Discovery</h3>

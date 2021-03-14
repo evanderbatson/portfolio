@@ -4,6 +4,7 @@ h1 {
 	@include typeLarge();
 	font-family: $font-serif;
 	position: relative;
+	margin-bottom: $space;
 }
 
 h2 {
