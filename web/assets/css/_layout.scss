@@ -91,39 +91,44 @@ header {
 .page-section {
 	@include darkCard();
 	@include sectionPadding();
-	.section-container {
-		@include layoutGrid(8);
-		h1, h2, h3, p, hr {
-			grid-column: 1 / span 4;
-		}
-		form, img {
-			grid-column: 1 / span 4;
-			margin-bottom: $space*2;
-		}
-		//
-		//laptop
-		//
-		@media (max-width: $laptop) {
-			h1, h2, h3, p, hr {
-				grid-column: 1 / span 5;
-			}
-			form, img {
-				grid-column: 1 / span 5;
-			}
-		}
-		//
-		//mobile
-		//
-		@media (max-width: $tablet) {
-			h1, h2, h3, p, hr  {
-				grid-column: 1 / span 8;
-			}
-			form, img {
-				grid-column: 1 / span 8;
-			}
+	h1, h2, h3, p, hr, ul {
+		grid-column: 1 / span 4;
+	}
+	li {
+		display: block;
+		&::before {
+			content: "–";
 		}
 	}
-
+	form, img {
+		grid-column: 1 / span 4;
+		margin-bottom: $space*2;
+	}
+	//
+	//laptop
+	//
+	@media (max-width: $laptop) {
+		h1, h2, h3, p, hr, ul {
+			grid-column: 1 / span 5;
+		}
+		form, img {
+			grid-column: 1 / span 5;
+		}
+	}
+	//
+	//mobile
+	//
+	@media (max-width: $tablet) {
+		h1, h2, h3, p, hr, ul  {
+			grid-column: 1 / span 8;
+		}
+		form, img {
+			grid-column: 1 / span 8;
+		}
+	}
+	.section-container {
+		@include layoutGrid(8);
+	}
 	.section-grid {
 		@include layoutGrid(8);
 		margin-bottom: $space;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .hidden {
   display: none;
 }
@@ -243,35 +244,41 @@ header .header-container {
     padding: 1.5rem;
   }
 }
+.page-section h1, .page-section h2, .page-section h3, .page-section p, .page-section hr, .page-section ul {
+  grid-column: 1/span 4;
+}
+.page-section li {
+  display: block;
+}
+.page-section li::before {
+  content: "–";
+}
+.page-section form, .page-section img {
+  grid-column: 1/span 4;
+  margin-bottom: 3rem;
+}
+@media (max-width: 1600px) {
+  .page-section h1, .page-section h2, .page-section h3, .page-section p, .page-section hr, .page-section ul {
+    grid-column: 1/span 5;
+  }
+  .page-section form, .page-section img {
+    grid-column: 1/span 5;
+  }
+}
+@media (max-width: 1024px) {
+  .page-section h1, .page-section h2, .page-section h3, .page-section p, .page-section hr, .page-section ul {
+    grid-column: 1/span 8;
+  }
+  .page-section form, .page-section img {
+    grid-column: 1/span 8;
+  }
+}
 .page-section .section-container {
   display: grid;
   grid-template-columns: repeat(8, [col] 1fr);
   grid-column-gap: 0.75rem;
   align-content: start;
   justify-content: space-around;
-}
-.page-section .section-container h1, .page-section .section-container h2, .page-section .section-container h3, .page-section .section-container p, .page-section .section-container hr {
-  grid-column: 1/span 4;
-}
-.page-section .section-container form, .page-section .section-container img {
-  grid-column: 1/span 4;
-  margin-bottom: 3rem;
-}
-@media (max-width: 1600px) {
-  .page-section .section-container h1, .page-section .section-container h2, .page-section .section-container h3, .page-section .section-container p, .page-section .section-container hr {
-    grid-column: 1/span 5;
-  }
-  .page-section .section-container form, .page-section .section-container img {
-    grid-column: 1/span 5;
-  }
-}
-@media (max-width: 1024px) {
-  .page-section .section-container h1, .page-section .section-container h2, .page-section .section-container h3, .page-section .section-container p, .page-section .section-container hr {
-    grid-column: 1/span 8;
-  }
-  .page-section .section-container form, .page-section .section-container img {
-    grid-column: 1/span 8;
-  }
 }
 .page-section .section-grid {
   display: grid;

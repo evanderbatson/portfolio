@@ -26,7 +26,7 @@
 
 <section class="page-section">
     <div class="section-grid">
-        <h3 class="page-label glass">Case Study</h3>
+        <h3 class="page-label glass">Work Summary</h3>
         <h3 class="page-kicker">{{ entry.projectKicker }}</h3>
         <div class="page-info">
             <h3>{{ entry.projectRole }}
@@ -87,7 +87,7 @@
 {% if entry.caseStudyBody %}
 <section class="page-section case-study">
     <div class="section-container">
-        <h2 class="glass">Case Study</h2>
+        <h3 class="glass">Case Study</h3>
         <h1>{{ entry.caseStudyTitle }}</h1>
         <p>{{ entry.caseStudyBody | nl2br }}</p>
         {% set image = entry.caseStudyImage.one() %}
@@ -134,7 +134,7 @@
                     <h3>Next Up</h3>
                     <h1>{{ nextEntry.projectTitle }}</h1>
                     <h3>{{ nextEntry.projectKicker }}</h3>
-                    <h3 class="end-link glass">View Case Study</h3>
+                    <h3 class="end-link glass">View Project</h3>
                 </div>
             </a>
         </div>
@@ -151,7 +151,7 @@
                     <h3>Next up</h3>
                     <h1>{{ oneEntry.projectTitle }}</h1>
                     <h3>{{ oneEntry.projectKicker }}</h3>
-                    <h3 class="end-link glass">View Case Study</h3>
+                    <h3 class="end-link glass">View Project</h3>
                 </div>
             </a>
         </div>
