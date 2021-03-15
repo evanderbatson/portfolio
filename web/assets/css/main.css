@@ -331,11 +331,16 @@ header .header-container {
 }
 
 .case-study {
-  padding-top: 12rem;
+  padding-top: 9rem;
 }
 .case-study .section-grid .page-content {
   padding-right: 1.5rem;
   border-right: 1px solid #767676;
+}
+@media (max-width: 720px) {
+  .case-study {
+    padding-top: 4.5rem;
+  }
 }
 
 .images img {
@@ -380,14 +385,23 @@ header .header-container {
 }
 @media (max-width: 720px) {
   .slider .slider-container {
-    height: 400px;
+    height: 260px;
   }
   .slider .slider-container .slider-image {
-    height: 400px;
+    height: 260px;
+  }
+  .slider .slider-container .arrow {
+    width: 20%;
   }
   .slider .slider-container .arrow img {
     height: 2.25rem;
     transform: translate(0, -1.5rem);
+  }
+  .slider .slider-container .left {
+    margin-left: -0.75rem;
+  }
+  .slider .slider-container .right {
+    margin-right: -0.75rem;
   }
 }
 

@@ -182,12 +182,15 @@ header {
 	}
 }
 .case-study {
-	padding-top: $space*8;
+	padding-top: $space*6;
 	.section-grid {
 		.page-content {
 			padding-right: $space;
 			border-right: 1px solid $dark-grey-color;
 		}
+	}
+	@media (max-width: $mobile) {
+		padding-top: $space*3;
 	}
 }
 
@@ -232,15 +235,22 @@ header {
   			transform: scaleX(-1);
 		}
 		@media (max-width: $mobile) {
-			height: 400px;
+			height: 260px;
 			.slider-image {
-				height: 400px;
+				height: 260px;
 			}
 			.arrow {
+				width: 20%;
 				img {
 					height: $space*1.5;
 					transform: translate(0, -$space);
 				}
+			}
+			.left {
+				margin-left: -$space/2;
+			}
+			.right {
+				margin-right: -$space/2;
 			}
 		}
 	}
