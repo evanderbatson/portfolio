@@ -96,6 +96,7 @@ header {
 	}
 	li {
 		display: block;
+		margin-bottom: $space/2;
 		&::before {
 			content: "–";
 		}

@@ -249,6 +249,7 @@ header .header-container {
 }
 .page-section li {
   display: block;
+  margin-bottom: 0.75rem;
 }
 .page-section li::before {
   content: "–";
