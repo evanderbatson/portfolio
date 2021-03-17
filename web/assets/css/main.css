@@ -10,7 +10,7 @@
 }
 
 ::selection {
-  background: #6082ee;
+  background: #027b76;
 }
 
 html {
@@ -49,7 +49,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #6082ee;
+  color: #027b76;
 }
 
 ul, li {
@@ -131,7 +131,7 @@ header h1, header h2, header h3, header h4, header p, header a, header li {
   color: #FDFDFD;
 }
 header a:hover {
-  color: #6082ee;
+  color: #027b76;
 }
 header .header-container {
   display: grid;
@@ -237,7 +237,7 @@ header .header-container {
   color: #FDFDFD;
 }
 .page-section a:hover {
-  color: #6082ee;
+  color: #027b76;
 }
 @media (max-width: 720px) {
   .page-section {
@@ -351,7 +351,7 @@ header .header-container {
 
 .slider .slider-container {
   height: calc(20rem + 36vw);
-  background-color: #6082ee;
+  background-color: #027b76;
 }
 .slider .slider-container .slider-image {
   height: calc(20rem + 36vw);
@@ -543,7 +543,7 @@ header .header-container {
   color: #FDFDFD;
 }
 .info-card a:hover {
-  color: #6082ee;
+  color: #027b76;
 }
 @media (max-width: 1920px) {
   .info-card {
@@ -650,7 +650,7 @@ header .header-container {
   color: #FDFDFD;
 }
 .services-card a:hover {
-  color: #6082ee;
+  color: #027b76;
 }
 @media (max-width: 720px) {
   .services-card {
@@ -767,7 +767,7 @@ footer h1, footer h2, footer h3, footer h4, footer p, footer a, footer li {
   color: #FDFDFD;
 }
 footer a:hover {
-  color: #6082ee;
+  color: #027b76;
 }
 footer .footer-left {
   grid-column: 1/span 2;
@@ -815,7 +815,7 @@ footer .brand {
 .alert-banner {
   width: auto;
   padding: 1.5rem 3rem;
-  background-color: #6082ee;
+  background-color: #027b76;
   z-index: -1;
   display: flex;
   justify-content: space-between;
