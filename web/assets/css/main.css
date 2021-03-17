@@ -352,6 +352,7 @@ header .header-container {
 .slider .slider-container {
   height: calc(20rem + 36vw);
   background-color: #027b76;
+  overflow: hidden;
 }
 .slider .slider-container .slider-image {
   height: calc(20rem + 36vw);

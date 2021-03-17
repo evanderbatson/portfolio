@@ -206,6 +206,7 @@ header {
 	.slider-container {
 		height: $card-height;
 		background-color: $accent-color;
+		overflow: hidden;
 		.slider-image {
 			height: $card-height;
 			width: 100%;
