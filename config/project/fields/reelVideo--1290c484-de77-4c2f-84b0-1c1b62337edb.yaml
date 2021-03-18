@@ -1,0 +1,32 @@
+contentColumnType: string
+fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b
+handle: reelVideo
+instructions: ''
+name: reelVideo
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:38d861ce-b6d6-4067-915d-90b36db8d320'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

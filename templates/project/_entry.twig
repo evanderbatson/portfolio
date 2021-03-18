@@ -112,6 +112,15 @@
         <h3 class="page-content">{{ entry.iteration | nl2br }}</h3>
     </div>
 </section>
+<section class="page-section" >
+    <div class="reel">
+        {% if entry.reelVideo.one() %}
+            <video loop muted autoplay controls class="reel-video">
+                <source src="{{ entry.reelVideo.one().url }}" type="video/mp4">
+            </video>        
+        {% endif %}
+    </div>
+</section>
 {% endif %}
 
 {% set params = {
