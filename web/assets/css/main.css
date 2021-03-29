@@ -89,7 +89,7 @@ h3, li, input, textarea {
 p {
   font-size: calc(1rem + .6vw);
   line-height: 1.5;
-  font-family: pragmatica-extended, Helvetica, Arial, sans-serif;
+  font-family: pragmatica-extended, Georgia, sans-serif;
 }
 
 a {
@@ -339,6 +339,9 @@ header .header-container {
 }
 .case-study .section-grid .page-content p {
   margin-bottom: 0;
+}
+.case-study .section-grid .page-content li {
+  font-size: calc(1rem + .6vw);
 }
 @media (max-width: 720px) {
   .case-study {
