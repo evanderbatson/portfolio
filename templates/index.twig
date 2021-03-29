@@ -27,8 +27,8 @@
 <!--            -->
 
 <section id="projects" class="project-grid">
-    {% for entry in craft.entries.section('project').limit(6) %}
-        {% set image = entry.projectThumbnail.first() %}
+    {% for entry in craft.entries.section('project').limit(6).all() %}
+        {% set image = entry.projectThumbnail.one() %}
             <div class="project-preview">
                     {% if image %}
                     <a href='{{ entry.url }}'>

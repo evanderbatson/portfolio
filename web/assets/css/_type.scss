@@ -17,9 +17,14 @@ h3, li, input, textarea {
 	font-family: $font-sans;
 }
 
-p, a {
+p {
+	@include typeMedium();
+	font-family: $font-sans;
+}
+
+a {
 	@include typeSmall();
-		font-family: $font-sans;
+	font-family: $font-sans;
 }
 
 hr {

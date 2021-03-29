@@ -96,31 +96,33 @@
         {% endif %}
     </div>
     <div class="section-grid">
-        <h3 class="page-label glass">Discovery</h3>
+        <h3 class="glass">Impetus</h3>
         <h3 class="page-content">{{ entry.discovery | nl2br }}</h3>
 
-        <h3 class="page-label glass">Research</h3>
+        <h3 class="glass">Discovery</h3>
         <h3 class="page-content">{{ entry.research | nl2br }}</h3>
 
-        <h3 class="page-label glass">Prototyping</h3>
+        <h3 class="glass">Prototyping</h3>
         <h3 class="page-content">{{ entry.prototyping | nl2br }}</h3>
 
-        <h3 class="page-label glass">Development</h3>
+        <h3 class="glass">Development</h3>
         <h3 class="page-content">{{ entry.development | nl2br }}</h3>
 
-        <h3 class="page-label glass">Release and Iteration</h3>
+        <h3 class="glass">Release and Iteration</h3>
         <h3 class="page-content">{{ entry.iteration | nl2br }}</h3>
+
     </div>
 </section>
-<section class="page-section" >
-    <div class="reel">
-        {% if entry.reelVideo.one() %}
-            <video loop muted autoplay controls class="reel-video">
-                <source src="{{ entry.reelVideo.one().url }}" type="video/mp4">
-            </video>        
-        {% endif %}
+{% endif %}
+
+{% if entry.reelVideo.one() %}
+<section class="page-section">
+    <div class="section-container">
+        <video loop muted autoplay controls class="reel-video">
+            <source src="{{ entry.reelVideo.one().url }}" type="video/mp4">
+        </video>
     </div>
-</section>
+</section>        
 {% endif %}
 
 {% set params = {

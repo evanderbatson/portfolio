@@ -21,7 +21,6 @@
     <section class="services-card">
         {% if entry.servicesTable | length %}
         <div class="services-container">
-                <h3 class="services-label glass">Services Offered</h3>
                 {% for row in entry.servicesTable %}
                     <div class="service-description">
                         <h3>{{ row.serviceName }}</h3>

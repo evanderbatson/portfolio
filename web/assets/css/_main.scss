@@ -24,9 +24,9 @@ $mobile:          720px;
 //
 
 $typeSize-l:      calc(2rem + 2vw);
-$typeSize-m:      calc(1rem + 0.6vw);
-$typeSize-s:      calc(0.75rem + 0.4vw);
-$typeSize-xs:     calc(0.8rem + 0.4vw);
+$typeSize-m:      calc(1rem + .6vw);
+$typeSize-s:      calc(0.8rem + .6vw);
+$typeSize-xs:     calc(0.8rem + .6vw);
 
 
 //
@@ -113,15 +113,15 @@ $font-sans: pragmatica-extended, Helvetica, Arial, sans-serif;
 //mixins
 //
 
-@mixin layoutGrid ($columns) {
+@mixin layoutGrid($columns) {
   display: grid;
   grid-template-columns: repeat($columns, [col] 1fr);
-  grid-column-gap: $space/2;
+  grid-column-gap: $space;
   align-content: start;
   justify-content: space-around;
 }
 
-@mixin darkCard () {
+@mixin darkCard() {
   background-color: $dark-color;
   h1, h2, h3, h4, p, a, li {
     color: $light-color;
@@ -131,7 +131,7 @@ $font-sans: pragmatica-extended, Helvetica, Arial, sans-serif;
   }
 }
 
-@mixin lightCard () {
+@mixin lightCard() {
   background-color: $light-color;
   h1, h2, h3, h4, p, a, li {
     color: $dark-color;

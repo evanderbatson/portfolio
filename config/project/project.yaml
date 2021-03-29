@@ -1,7 +1,11 @@
-dateModified: 1616025898
+dateModified: 1616094954
 email:
-  fromEmail: evanderbatson@gmail.com
+  fromEmail: evander@hey.com
   fromName: Portfolio
+  replyToEmail: null
+  template: null
+  transportSettings:
+    command: ''
   transportType: craft\mail\transportadapters\Sendmail
 plugins:
   obfuscator:

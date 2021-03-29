@@ -26,12 +26,18 @@
             {{ entry.bodyCopy }}
         </h3>
 
+        <h3>Twitter: <a href="http://twitter.com/evanderbatson" target="_blank">@evanderbatson</a>
+
         <h3 class="page-emailLink">Email:
             {% filter enkode_emails %}
-                <a href="mailto:evander@hey.com">evander@hey.com</a>
+                <a href="mailto:evander@hey.com" target="_blank">evander@hey.com</a>
             {% endfilter %}
         </h3>
     </div>
+
+    <div class="spacer-xl">
+    </div>
+
 </section>
 
 {% endblock %}
