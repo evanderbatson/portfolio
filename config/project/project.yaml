@@ -1,4 +1,4 @@
-dateModified: 1616094954
+dateModified: 1617977213
 email:
   fromEmail: evander@hey.com
   fromName: Portfolio
@@ -20,7 +20,7 @@ system:
   edition: solo
   live: true
   name: Portfolio
-  schemaVersion: 3.6.6
+  schemaVersion: 3.6.7
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
