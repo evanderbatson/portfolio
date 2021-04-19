@@ -75,27 +75,28 @@ h1 {
 }
 
 h2 {
-  font-size: calc(1rem + .6vw);
+  font-size: calc(0.8rem + .7vw);
   line-height: 1.5;
   font-family: pragmatica-extended, Helvetica, Arial, sans-serif;
 }
 
-h3, li, input, textarea {
-  font-size: calc(0.8rem + .6vw);
+h3 {
+  font-size: calc(0.8rem + .7vw);
   line-height: 1.5;
   font-family: pragmatica-extended, Helvetica, Arial, sans-serif;
 }
 
-p {
-  font-size: calc(1rem + .6vw);
+li, input, textarea, a {
+  font-size: calc(0.8rem + .7vw);
   line-height: 1.5;
   font-family: pragmatica-extended, Georgia, sans-serif;
 }
 
-a {
-  font-size: calc(0.8rem + .6vw);
+p {
+  font-size: calc(0.8rem + .7vw);
   line-height: 1.5;
-  font-family: pragmatica-extended, Helvetica, Arial, sans-serif;
+  font-family: pragmatica-extended, Georgia, sans-serif;
+  line-height: 1.8;
 }
 
 hr {
@@ -107,7 +108,7 @@ hr {
 }
 
 caption {
-  font-size: calc(0.8rem + .6vw);
+  font-size: calc(0.8rem + .7vw);
   line-height: 1.5;
   font-family: pragmatica-extended, Helvetica, Arial, sans-serif;
 }
@@ -254,7 +255,8 @@ header .header-container {
   margin-bottom: 0.75rem;
 }
 .page-section li::before {
-  content: "–";
+  content: "▹";
+  padding-right: 0.75rem;
 }
 .page-section form, .page-section img, .page-section video {
   grid-column: 2/span 6;
@@ -332,16 +334,19 @@ header .header-container {
 .case-study h1, .case-study h2, .case-study h3, .case-study h4, .case-study p, .case-study a, .case-study li {
   color: #101010;
 }
-.case-study .section-grid .page-content {
+.case-study .section-grid .grid-content {
+  grid-column: 2/span 5;
   padding-left: 1.5rem;
   margin-bottom: 4.5rem;
   border-left: 0.1rem solid #767676;
 }
-.case-study .section-grid .page-content p {
+.case-study .section-grid .grid-content p {
   margin-bottom: 0;
 }
-.case-study .section-grid .page-content li {
-  font-size: calc(1rem + .6vw);
+@media (max-width: 1024px) {
+  .case-study .section-grid .grid-content {
+    grid-column: 1/span 8;
+  }
 }
 @media (max-width: 720px) {
   .case-study {

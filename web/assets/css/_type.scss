@@ -12,19 +12,20 @@ h2 {
 	font-family: $font-sans;
 }
 
-h3, li, input, textarea {
+h3 {
 	@include typeSmall();
 	font-family: $font-sans;
+}
+
+li, input, textarea, a {
+	@include typeSmall();
+	font-family: $font-serif;	
 }
 
 p {
 	@include typeMedium();
 	font-family: $font-serif;
-}
-
-a {
-	@include typeSmall();
-	font-family: $font-sans;
+	line-height: 1.8;
 }
 
 hr {

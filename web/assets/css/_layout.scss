@@ -94,7 +94,8 @@ header {
 		display: block;
 		margin-bottom: $space/2;
 		&::before {
-			content: "–";
+			content: "▹";
+			padding-right: $space/2;
 		}
 	}
 	form, img, video {
@@ -171,15 +172,16 @@ header {
 	padding-top: $space*6;
 	@include lightCard();
 	.section-grid {
-		.page-content {
+		.grid-content {
+			grid-column: 2 / span 5;
 			padding-left: $space;
 			margin-bottom: $space*3;
 			border-left: .1rem solid $dark-grey-color;
 			p {
 				margin-bottom: 0;
 			}
-			li {
-				font-size: $typeSize-m;
+			@media (max-width: $tablet) {
+				grid-column: 1 / span 8;
 			}
 		}
 	}
