@@ -1,5 +1,5 @@
 contentColumnType: text
-fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b
+fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b # Projects
 handle: projectAwards
 instructions: ''
 name: 'Project Awards'
@@ -7,7 +7,7 @@ searchable: false
 settings:
   availableTransforms: '*'
   availableVolumes:
-    - 9cc06734-586d-496c-8b86-0e2a97ed9626
+    - 9cc06734-586d-496c-8b86-0e2a97ed9626 # Images
   cleanupHtml: true
   columnType: text
   configSelectionMode: choose

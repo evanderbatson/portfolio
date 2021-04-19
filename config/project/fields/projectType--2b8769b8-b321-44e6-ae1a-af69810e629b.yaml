@@ -1,5 +1,5 @@
 contentColumnType: string(96)
-fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b
+fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b # Projects
 handle: projectType
 instructions: ''
 name: 'Project Type'

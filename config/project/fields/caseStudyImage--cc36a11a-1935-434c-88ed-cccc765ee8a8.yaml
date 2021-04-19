@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b
+fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b # Projects
 handle: caseStudyImage
 instructions: ''
 name: 'Case Study Image'
@@ -8,7 +8,7 @@ settings:
   allowSelfRelations: false
   allowUploads: true
   allowedKinds: null
-  defaultUploadLocationSource: 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626'
+  defaultUploadLocationSource: 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626' # Images
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: false
@@ -18,11 +18,11 @@ settings:
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626'
+  singleUploadLocationSource: 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626' # Images
   singleUploadLocationSubpath: ''
   source: null
   sources:
-    - 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626'
+    - 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626' # Images
   targetSiteId: null
   useSingleFolder: false
   validateRelatedElements: false

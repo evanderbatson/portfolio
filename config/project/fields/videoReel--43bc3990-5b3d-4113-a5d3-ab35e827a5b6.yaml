@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: 1ebe758b-faa7-4e26-8867-fc4c02b80dfb
+fieldGroup: 1ebe758b-faa7-4e26-8867-fc4c02b80dfb # Common
 handle: videoReel
 instructions: ''
 name: 'Video Reel'
@@ -7,7 +7,7 @@ searchable: false
 settings:
   allowSelfRelations: false
   allowedKinds: null
-  defaultUploadLocationSource: 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626'
+  defaultUploadLocationSource: 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626' # Images
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: false
@@ -16,7 +16,7 @@ settings:
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:38d861ce-b6d6-4067-915d-90b36db8d320'
+  singleUploadLocationSource: 'volume:38d861ce-b6d6-4067-915d-90b36db8d320' # Videos
   singleUploadLocationSubpath: ''
   source: null
   sources: '*'

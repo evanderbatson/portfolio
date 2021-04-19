@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b
+fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b # Projects
 handle: heroVideo
 instructions: ''
 name: 'Hero Video'
@@ -7,7 +7,7 @@ searchable: false
 settings:
   allowSelfRelations: false
   allowedKinds: null
-  defaultUploadLocationSource: 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626'
+  defaultUploadLocationSource: 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626' # Images
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: false
@@ -16,7 +16,7 @@ settings:
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:38d861ce-b6d6-4067-915d-90b36db8d320'
+  singleUploadLocationSource: 'volume:38d861ce-b6d6-4067-915d-90b36db8d320' # Videos
   singleUploadLocationSubpath: ''
   source: null
   sources: '*'

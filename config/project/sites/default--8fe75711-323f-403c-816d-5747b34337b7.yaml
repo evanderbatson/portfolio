@@ -5,5 +5,5 @@ hasUrls: true
 language: en-US
 name: Portfolio
 primary: true
-siteGroup: f53ae8b3-bbc1-43d4-ada8-b78b070adc27
+siteGroup: f53ae8b3-bbc1-43d4-ada8-b78b070adc27 # Portfolio
 sortOrder: 1

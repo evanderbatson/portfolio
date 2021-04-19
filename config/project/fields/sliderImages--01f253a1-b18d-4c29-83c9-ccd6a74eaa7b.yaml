@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b
+fieldGroup: 3b9ebc55-aaf6-419e-9966-cc3150c0241b # Projects
 handle: sliderImages
 instructions: ''
 name: 'Slider Images'
@@ -7,7 +7,7 @@ searchable: true
 settings:
   allowSelfRelations: false
   allowedKinds: null
-  defaultUploadLocationSource: 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626'
+  defaultUploadLocationSource: 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626' # Images
   defaultUploadLocationSubpath: ''
   limit: '20'
   localizeRelations: false
@@ -16,7 +16,7 @@ settings:
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626'
+  singleUploadLocationSource: 'volume:9cc06734-586d-496c-8b86-0e2a97ed9626' # Images
   singleUploadLocationSubpath: ''
   source: null
   sources: '*'

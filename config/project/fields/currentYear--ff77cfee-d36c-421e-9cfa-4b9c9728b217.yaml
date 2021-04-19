@@ -1,5 +1,5 @@
 contentColumnType: string(16)
-fieldGroup: 1ebe758b-faa7-4e26-8867-fc4c02b80dfb
+fieldGroup: 1ebe758b-faa7-4e26-8867-fc4c02b80dfb # Common
 handle: currentYear
 instructions: ''
 name: 'Current Year'

@@ -4,7 +4,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 67fc1259-b363-4339-9e58-96d112b557ee
+            fieldUid: 67fc1259-b363-4339-9e58-96d112b557ee # Link Table
             instructions: null
             label: null
             required: false

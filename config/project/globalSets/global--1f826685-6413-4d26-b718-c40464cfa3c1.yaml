@@ -4,7 +4,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 9bebd901-90cb-4ddc-a068-c71343bc5a9e
+            fieldUid: 9bebd901-90cb-4ddc-a068-c71343bc5a9e # Site Title
             instructions: null
             label: null
             required: false
@@ -13,7 +13,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: f2b32a82-6f59-48eb-90c4-be1544a03c7c
+            fieldUid: f2b32a82-6f59-48eb-90c4-be1544a03c7c # Author
             instructions: null
             label: null
             required: false
@@ -22,7 +22,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: ff77cfee-d36c-421e-9cfa-4b9c9728b217
+            fieldUid: ff77cfee-d36c-421e-9cfa-4b9c9728b217 # Current Year
             instructions: null
             label: null
             required: false
@@ -31,7 +31,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 27bff9a5-e035-4d96-833b-c2ae3c31a0da
+            fieldUid: 27bff9a5-e035-4d96-833b-c2ae3c31a0da # Degrees
             instructions: null
             label: null
             required: false
@@ -40,7 +40,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 6f3bbbb7-a66f-4b60-9f00-2f34d6a10944
+            fieldUid: 6f3bbbb7-a66f-4b60-9f00-2f34d6a10944 # Alert Banner
             instructions: null
             label: null
             required: false
@@ -49,7 +49,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 1bed5876-1717-4b3e-bf90-056ea5a70c27
+            fieldUid: 1bed5876-1717-4b3e-bf90-056ea5a70c27 # Alert Text
             instructions: null
             label: null
             required: false

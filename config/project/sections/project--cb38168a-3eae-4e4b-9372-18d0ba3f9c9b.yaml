@@ -3,7 +3,7 @@ handle: project
 name: Project
 propagationMethod: all
 siteSettings:
-  8fe75711-323f-403c-816d-5747b34337b7:
+  8fe75711-323f-403c-816d-5747b34337b7: # Portfolio
     enabledByDefault: true
     hasUrls: true
     template: project/_entry

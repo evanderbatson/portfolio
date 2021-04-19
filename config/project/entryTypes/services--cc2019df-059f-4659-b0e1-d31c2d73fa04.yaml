@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 02b9e112-0c24-48de-8f60-4eb4beb3b35e
+            fieldUid: 02b9e112-0c24-48de-8f60-4eb4beb3b35e # Page Title
             instructions: null
             label: null
             required: false
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 8727f398-3cdb-4da2-9186-5eaf704f6cd0
+            fieldUid: 8727f398-3cdb-4da2-9186-5eaf704f6cd0 # Services Table
             instructions: null
             label: null
             required: false
@@ -49,7 +49,7 @@ fieldLayouts:
 handle: services
 hasTitleField: true
 name: Services
-section: b14f9a74-ef1f-4fb7-8b18-884fd4afaa9b
+section: b14f9a74-ef1f-4fb7-8b18-884fd4afaa9b # Services
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
