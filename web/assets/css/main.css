@@ -75,25 +75,25 @@ h1 {
 }
 
 h2 {
-  font-size: calc(0.8rem + .7vw);
+  font-size: calc(0.8rem + .6vw);
   line-height: 1.5;
   font-family: pragmatica-extended, Helvetica, Arial, sans-serif;
 }
 
 h3 {
-  font-size: calc(0.8rem + .7vw);
+  font-size: calc(0.8rem + .6vw);
   line-height: 1.5;
   font-family: pragmatica-extended, Helvetica, Arial, sans-serif;
 }
 
 li, input, textarea, a {
-  font-size: calc(0.8rem + .7vw);
+  font-size: calc(0.8rem + .6vw);
   line-height: 1.5;
   font-family: pragmatica-extended, Georgia, sans-serif;
 }
 
 p {
-  font-size: calc(0.8rem + .7vw);
+  font-size: calc(0.8rem + .6vw);
   line-height: 1.5;
   font-family: pragmatica-extended, Georgia, sans-serif;
   line-height: 1.8;
@@ -108,7 +108,7 @@ hr {
 }
 
 caption {
-  font-size: calc(0.8rem + .7vw);
+  font-size: calc(0.8rem + .6vw);
   line-height: 1.5;
   font-family: pragmatica-extended, Helvetica, Arial, sans-serif;
 }
